@@ -25,7 +25,7 @@ docker run --rm -p 3838:3838 -p 8787:8787 \
 -v ~/shinylogs:/var/log/shiny-server/ \
 --name shiny shiny
 ```
-Access the app on you browser over [http://localhost:3838/histogram](http://localhost:3838/histogram).
+Access the app on your browser over [http://localhost:3838/histogram](http://localhost:3838/histogram).
 
 ### Contributing
 
