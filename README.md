@@ -60,6 +60,7 @@ docker rmi shiny
 Submitting your changes to the repo's app:
 ```bash
 cd ~/shiny/histogram
+
 git add .
 git commit -m "<describe your changes here>"
 git push
