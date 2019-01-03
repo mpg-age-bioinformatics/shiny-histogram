@@ -41,7 +41,7 @@ docker exec -i -t shiny /bin/bash
 ```
 Make sure any installed libraries are added to the end of the [Dockerfile](https://github.com/mpg-age-bioinformatics/shiny/blob/master/Dockerfile) and that the respective changes are committed.
 
-Please make sure that all files downloaded by the user containt the version tag eg.:
+Please make sure that all files downloaded by the user contain the version tag eg.:
 ```R
     # specify the output file name
     filename = function(){
@@ -64,7 +64,7 @@ git add .
 git commit -m "<describe your changes here>"
 git push origin HEAD:master
 ```
-And then tell the main project to start trach the updated version:
+And then tell the main project to start tracking the updated version:
 ```bash
 cd ~/shiny
 git add histogram
