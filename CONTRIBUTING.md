@@ -2,7 +2,7 @@
 
 To help you with development we have deployed an RStudio server in the main container. 
 
-After starting the container as descrived above you can start the RStudio server:
+After starting the container as descrived in the `README.md` you can start the RStudio server:
 ```bash
 docker exec -i -t shiny sudo rstudio-server start
 ```
