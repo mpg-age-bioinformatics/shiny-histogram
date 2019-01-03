@@ -5,7 +5,7 @@ This app has been developed to work inside a docker container (Dockerfile file a
 To use this app locally you need to build the respective container and clone this repo:
 
 Build the image:
-````bash
+```bash
 cd ~/
 mkdir -p shinylogs
 git clone https://github.com/mpg-age-bioinformatics/shiny.git
@@ -14,7 +14,7 @@ docker build -t shiny .
 ```
 Pull the app:
 ```bash
-cd ~/shiny/histogram
+cd ~/shiny
 git submodule init histogram 
 git submodule update histogram 
 ```
@@ -60,10 +60,9 @@ docker rmi shiny
 Submitting your changes to the repo's app:
 ```bash
 cd ~/shiny/histogram
-
 git add .
 git commit -m "<describe your changes here>"
-git push
+git push origin HEAD:master
 ```
 And then tell the main project to start trach the updated version:
 ```bash
