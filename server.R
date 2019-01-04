@@ -1,6 +1,6 @@
 .libPaths("/srv/shiny-server/histogram/libs")
 gitversion <- function(){ 
-  git<-read.csv("/srv/shiny-server/.git/refs/heads/master", header=FALSE)
+  git<-read.csv("/srv/shiny-server/.git/modules/histogram/refs/heads/master", header=FALSE)
   git<-git$V1
   git<-toString(git[1])
   git<-substr(git, 1, 7)
